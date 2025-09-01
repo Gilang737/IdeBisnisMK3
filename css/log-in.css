@@ -6,8 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7043 0%, #ff5722 50%, #e64a19 100%);
-    min-height: 100vh;
+    background-color: #db4437;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +14,7 @@ body {
 
 .register {
     background: rgba(255, 255, 255, 0.95);
-    padding: 40px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     width: 400px;
@@ -26,7 +25,7 @@ body {
 .pendaftaran {
     color: #e64a19;
     font-size: 2.2rem;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     text-align: center;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
@@ -51,7 +50,7 @@ body {
 
 input[type="checkbox"] {
     margin-right: 8px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     transform: scale(1.2);
     accent-color: #ff5722;
 }
@@ -85,22 +84,17 @@ input[type="checkbox"] {
 }
 
 #fb { background: #3b5998; }
-#fb:hover { background: #2d4373; }
 
 #xbox { background: #107c10; }
-#xbox:hover { background: #0d5d0d; }
 
 #google { background: #db4437; }
-#google:hover { background: #c23321; }
 
 #ps { background: #003791; }
-#ps:hover { background: #002a6b; }
 
 #apple { background: #000000; }
-#apple:hover { background: #333333; }
 
 .dropdown {
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 .btn-secondary {
@@ -143,7 +137,7 @@ input[type="checkbox"] {
     width: 60px;
     height: 60px;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 10px 0;
     transition: all 0.3s ease;
     color: white;
 }

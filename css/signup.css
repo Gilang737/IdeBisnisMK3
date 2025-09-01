@@ -6,8 +6,7 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(135deg, #ff7043 0%, #ff5722 50%, #e64a19 100%);
-    min-height: 100vh;
+    background-color: #db4437;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -91,19 +90,14 @@ input[type="checkbox"] {
 }
 
 #fb { background: #3b5998; }
-#fb:hover { background: #2d4373; }
 
 #xbox { background: #107c10; }
-#xbox:hover { background: #0d5d0d; }
 
 #google { background: #db4437; }
-#google:hover { background: #c23321; }
 
 #ps { background: #003791; }
-#ps:hover { background: #002a6b; }
 
 #apple { background: #000000; }
-#apple:hover { background: #333333; }
 
 .daftar {
     background: linear-gradient(45deg, #ff5722, #ff7043);
@@ -113,7 +107,7 @@ input[type="checkbox"] {
     width: 60px;
     height: 60px;
     cursor: pointer;
-    margin: 20px 0;
+    margin: 10px 0;
     transition: all 0.3s ease;
     color: white;
 }
