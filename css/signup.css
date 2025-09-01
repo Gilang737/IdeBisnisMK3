@@ -1,83 +1,139 @@
-*{
-    font-family: Arial;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.register{
-    margin: 20px;
-    border: 5px solid;
-    padding: 20px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    max-width: 400px;
-    border-color: black;
-    border-radius: 5px;
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7043 0%, #ff5722 50%, #e64a19 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.pendaftaran{
-    margin-top: -30px;
-    margin-bottom: 40px;
+.register {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    border: 3px solid #ff5722;
 }
 
-#email{
-    width: 70%;
-    height: 40px;
-    padding: 10px;
-    background-color: lightgray;
-    border: 0px;
+.pendaftaran {
+    color: #e64a19;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+p {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #666;
+}
+
+#email {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ff7043;
+    border-radius: 8px;
+    font-size: 1rem;
     margin-bottom: 10px;
+    background: #fff;
+    transition: border-color 0.3s ease;
 }
 
-.button .method{
+#email:focus {
+    outline: none;
+    border-color: #e64a19;
+    box-shadow: 0 0 5px rgba(230, 74, 25, 0.3);
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+    transform: scale(1.2);
+    accent-color: #ff5722;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.method {
+    background: #ff5722;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method:hover {
+    background: #e64a19;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 74, 25, 0.4);
+}
+
+#fb { background: #3b5998; }
+#fb:hover { background: #2d4373; }
+
+#xbox { background: #107c10; }
+#xbox:hover { background: #0d5d0d; }
+
+#google { background: #db4437; }
+#google:hover { background: #c23321; }
+
+#ps { background: #003791; }
+#ps:hover { background: #002a6b; }
+
+#apple { background: #000000; }
+#apple:hover { background: #333333; }
+
+.daftar {
+    background: linear-gradient(45deg, #ff5722, #ff7043);
     border: none;
-    padding: 10px;
-    border-radius: 5px;
-    margin-right: 2px;
-    margin-left: 2px;
-}
-
-.button .method:hover{
-    cursor: pointer;
-    outline: 1px solid;
-    outline-color: black;
-}
-
-.button #fb{
-    background-color: blue;
-}
-.button #xbox{
-    background-color: green;
-}
-.button #google{
-    background-color: red;
-}
-.button #ps{
-    background-color: blue;
-}
-.button #apple{
-    background-color: black;
-}
-
-#daftar {
-    margin-top: 10px;
-    width: 70px;
+    padding: 15px;
+    border-radius: 50%;
+    width: 60px;
     height: 60px;
-    background-color: red;
-    border: none;
-    border-radius: 5%;
-}
-
-#daftar:hover {
-    outline: 3px solid;
-    outline-color: black;
     cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    color: white;
 }
 
-.link{
-    color: gray;
+.daftar:hover {
+    background: linear-gradient(45deg, #e64a19, #ff5722);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(230, 74, 25, 0.4);
+}
+
+.link {
+    color: #ff5722;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: 15px;
+    display: inline-block;
 }
 
-.link:hover{
-    color: blue;
+.link:hover {
+    color: #e64a19;
+    text-decoration: underline;
 }

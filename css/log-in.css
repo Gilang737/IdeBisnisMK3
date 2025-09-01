@@ -1,90 +1,169 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.register{
-    margin: 20px;
-    border: 5px solid;
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff7043 0%, #ff5722 50%, #e64a19 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.register {
+    background: rgba(255, 255, 255, 0.95);
     padding: 40px;
-    padding-top: 60px;
-    padding-bottom: 30px;
-    max-width: 400px;
-    border-color: black;
-    border-radius: 5px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    width: 400px;
+    max-width: 90%;
+    border: 3px solid #ff5722;
 }
 
-.pendaftaran{
-    margin-top: -30px;
-    margin-bottom: 40px;
+.pendaftaran {
+    color: #e64a19;
+    font-size: 2.2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
-#email, #password{
-    width: 70%;
-    height: 40px;
-    padding: 10px;
-    background-color: lightgray;
-    border: 0px;
+#email, #password {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #ff7043;
+    border-radius: 8px;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    background: #fff;
+    transition: border-color 0.3s ease;
+}
+
+#email:focus, #password:focus {
+    outline: none;
+    border-color: #e64a19;
+    box-shadow: 0 0 5px rgba(230, 74, 25, 0.3);
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
     margin-bottom: 20px;
+    transform: scale(1.2);
+    accent-color: #ff5722;
 }
 
-.button .method{
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    gap: 10px;
+}
+
+.method {
+    background: #ff5722;
+    border: none;
+    padding: 12px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
     color: white;
-    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.method:hover {
+    background: #e64a19;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(230, 74, 25, 0.4);
+}
+
+#fb { background: #3b5998; }
+#fb:hover { background: #2d4373; }
+
+#xbox { background: #107c10; }
+#xbox:hover { background: #0d5d0d; }
+
+#google { background: #db4437; }
+#google:hover { background: #c23321; }
+
+#ps { background: #003791; }
+#ps:hover { background: #002a6b; }
+
+#apple { background: #000000; }
+#apple:hover { background: #333333; }
+
+.dropdown {
+    margin: 20px 0;
+}
+
+.btn-secondary {
+    background-color: #ff7043 !important;
+    border-color: #ff5722 !important;
+    color: white !important;
+    width: 100%;
     padding: 10px;
-    border-radius: 5px;
-    margin-top: 20px;
-    margin-right: 2px;
-    margin-left: 2px;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
-.button .method:hover{
-    cursor: pointer;
-    outline: 1px solid;
-    outline-color: black;
+.btn-secondary:hover {
+    background-color: #e64a19 !important;
+    border-color: #d84315 !important;
 }
 
-.button #fb{
-    background-color: blue;
-}
-.button #xbox{
-    background-color: green;
-}
-.button #google{
-    background-color: red;
-}
-.button #ps{
-    background-color: blue;
-}
-.button #apple{
-    background-color: black;
+.dropdown-menu {
+    width: 100%;
+    border: 2px solid #ff7043;
+    border-radius: 8px;
 }
 
-#daftar {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 70px;
-    height: 60px;
-    background-color: red;
+.dropdown-item {
+    color: #333;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.dropdown-item:hover {
+    background-color: #fff3e0;
+    color: #e64a19;
+}
+
+.daftar {
+    background: linear-gradient(45deg, #ff5722, #ff7043);
     border: none;
-    border-radius: 5%;
-}
-
-
-#daftar:hover {
-    outline: 3px solid;
-    outline-color: black;
+    padding: 15px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
     cursor: pointer;
+    margin: 20px 0;
+    transition: all 0.3s ease;
+    color: white;
 }
 
-.dropdown{
-    margin-bottom: 20px;
+.daftar:hover {
+    background: linear-gradient(45deg, #e64a19, #ff5722);
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(230, 74, 25, 0.4);
 }
 
-.link{
-    color: gray;
+.link {
+    color: #ff5722;
     text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: 15px;
+    display: inline-block;
 }
 
-.link:hover{
-    color: blue;
+.link:hover {
+    color: #e64a19;
+    text-decoration: underline;
 }
