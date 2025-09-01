@@ -18,7 +18,7 @@
     margin-bottom: 40px;
 }
 
-#email{
+#email, #password{
     width: 70%;
     height: 40px;
     padding: 10px;
