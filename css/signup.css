@@ -100,10 +100,10 @@ input[type="checkbox"] {
 #apple { background: #000000; }
 
 .daftar {
-    background: linear-gradient(45deg, #ff5722, #ff7043);
+    background: orange;
     border: none;
     padding: 15px;
-    border-radius: 50%;
+    border-radius: 10%;
     width: 60px;
     height: 60px;
     cursor: pointer;
@@ -113,9 +113,7 @@ input[type="checkbox"] {
 }
 
 .daftar:hover {
-    background: linear-gradient(45deg, #e64a19, #ff5722);
-    transform: scale(1.05);
-    box-shadow: 0 5px 20px rgba(230, 74, 25, 0.4);
+    background-color: #d84315;
 }
 
 .link {
